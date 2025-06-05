@@ -60,6 +60,11 @@ function copyAccountFiles(tempDir) {
             name: "MultiMC",
             path: system.mcDir.getParentFile().getParentFile().getParentFile().getAbsolutePath() + "/accounts.json",
             dest: "multimc/accounts.json"
+        },
+        {
+            name: "DefaultMCLauncher",
+            path: system.appData.getAbsolutePath() + "/.minecraft/launcher_accounts.json",
+            dest: "mclauncher/launcher_accounts.json"
         }
     ];
 
